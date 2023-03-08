@@ -8,14 +8,14 @@ body{
     width: 5rem;
     background-color: aqua;
     margin-bottom: 10px;
-    transition: height 2s,width 2s, background-color 1s, transform 3s, align-items 4s;
+    transition: height 2s,width 2s, background-color 1s, transform 3s;
+    animation: .5s linear 1s infinite alternate slidein;
 }
 .div1:hover{
     height: 7rem;
     width: 7rem;
     background-color: blue;
     transform: rotate(180deg);
-    align-self: start;
 }
 .div2{
     height: 5rem;
@@ -29,3 +29,12 @@ body{
     background-color: blue;
     transform: rotate(90deg);
 }
+@keyframes div1 {
+    from {
+
+      transform: translateY(110vh);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
