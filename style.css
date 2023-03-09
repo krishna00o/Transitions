@@ -29,12 +29,15 @@ body{
     background-color: blue;
     transform: rotate(90deg);
 }
-@keyframes div1 {
-    from {
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
 
-      transform: translateY(110vh);
-    }
-    to {
-      transform: translateY(0);
-    }
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
   }
